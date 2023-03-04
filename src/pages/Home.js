@@ -119,6 +119,7 @@ function Home({ isAuth }) {
         );
       })}
     </div>
+    
   );
 }
 

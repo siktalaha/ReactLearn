@@ -17,7 +17,6 @@ useEffect(() => {
 
   return (
     <div>
-    <h1>Let's do some Quizzing</h1>
     <QuizContext.Provider value={{gameState,setGameState,score,setScore}}>
     {gameState==="menu" &&<MainMenu />}
     {gameState==="quiz" &&<PlayQuiz />}

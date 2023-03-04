@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React ,{useEffect,useState} from 'react'
+import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom'
 
 function Events({isAuth}) {
@@ -21,6 +22,7 @@ function Events({isAuth}) {
             <div className ="cardEvent" key={id}>
             <h4>{title.slice(0,15).toUpperCase()}</h4>
             <p>  {body}</p>
+            <Button variant="success">Get news</Button>
         </div>
         )
     })}

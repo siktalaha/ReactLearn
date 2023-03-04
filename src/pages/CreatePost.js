@@ -21,7 +21,7 @@ function CreatePost({isAuth}) {
     },[])
   return (
     <div className='createPostPage'><div className='cpContainer'>
-        <h1>Hello , Create a post</h1>
+        <h1>Create a post</h1>
         <div className='inputGp'>
             <label>Title:</label>
             <input placeholder="Title..." onChange={(event)=>{

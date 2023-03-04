@@ -1,14 +1,19 @@
 import React ,{useContext}from 'react'
+import Button from 'react-bootstrap/Button';
 import { QuizContext } from '../helper/Context';
 
 function MainMenu() {
     const{gameState,setGameState}=useContext(QuizContext);
   return (
-    <div>
+    <div className="container text-center">
+      <div className="row">
+        <div className="col">
         <h1>Hello Interested to play?</h1>
-        <button onClick={()=>{
+        <Button variant="success"  onClick={()=>{
             setGameState("quiz")
-        }}>Start</button>
+        }}>Start</Button>
+        </div>
+    </div>
     </div>
   )
 }
